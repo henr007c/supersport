@@ -1,0 +1,43 @@
+<div class="container">
+	<nav>
+		<div class="nav-wrapper">
+			<a [routerLink]="['home']" class="brand-logo">
+				<img src="assets/logo.png">
+			</a>
+			<ul id="nav-mobile" class="right nav-menu hide-on-med-and-down">
+				<li><a [routerLink]="['/contact']"><i class="material-icons">phone_forwarded</i>+45 22660077</a></li>
+				<li><a [routerLink]="['/contact']"><i class="material-icons">mail_outline</i>lorem@ipsum.com</a></li>
+				<li>
+					<a class="cart" href="#">
+						<i class="material-icons">shopping_cart</i>
+						$ 99.54 Checkout
+					</a>
+				</li>
+			</ul>
+		</div>
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		<ul id="nav-mobile" class="hide-on-med-and-down">
+			<li><a [routerLink]="['home']">HOME</a></li>
+			<li><a href="#">MEN</a></li>
+			<li><a href="#">WOMEN</a></li>
+			<li><a href="#">KIDS</a></li>
+			<li><a href="#">SALE</a></li>
+			<li><a href="#">AOUT US</a></li>
+			<li><a href="#">SUPPORT</a></li>
+			<li class="right">
+        		<span><i class="material-icons search">search</i>
+        		<input id="search" type="text" placeholder="Search"></span>
+        	</li>
+		</ul>
+		<ul class="side-nav" id="mobile-demo">
+			<li><a [routerLink]="['home']">HOME</a></li>
+			<li><a href="#">MEN</a></li>
+			<li><a href="#">WOMEN</a></li>
+			<li><a href="#">KIDS</a></li>
+			<li><a href="#">SALE</a></li>
+			<li><a href="#">AOUT US</a></li>
+			<li><a href="#">SUPPORT</a></li>
+		</ul>
+		
+	</nav>
+</div>
