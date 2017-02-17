@@ -1,0 +1,119 @@
+<main>
+
+    <div class="container">
+      
+      <div class="row detail-page">
+        
+        <div class="col s12 m12 l6 push-l6">
+          <h2>{{product.name}}</h2>
+          
+          <div class="col s6">
+            <img class="image-logo" src="assets/nike.png">
+          </div>
+
+          <div class="col s6">
+            <div class="detail-price right">
+              	{{product.cost}}
+            </div>
+            <div class="detail-before right">
+              kr 1115.24
+            </div>
+            <div class="detail-saved right">
+              You save 15.00%
+            </div>
+          </div>    
+          
+          <div class="col s12 detail-amount">
+            
+            <div class="row">
+              <div class="input-field col s8">
+                <input placeholder="EU 45 Black" id="size" type="text" class="validate">
+                <label for="size">Size</label>
+              </div>
+              <div class="col s2"></div>
+              <div class="input-field col s2">
+                <input placeholder="1" id="amount" type="text" class="validate">
+                <label for="Amount">Amount</label>
+              </div>
+
+              <a class="right waves-effect waves-light btn">BUY NOW</a>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class="col s12 m12 l6 pull-l6">
+          <img class="image-detail" src="{{product.image}}">
+
+          <div class="col s12 image-group">
+            <div class="col s4">
+              <img class="col s12" src="{{product.image}}">
+            </div>
+            <div class="col s4">
+              <img class="col s12" src="{{product.image}}">
+            </div>
+            <div class="col s4">
+              <img class="col s12" src="{{product.image}}">
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row" ng-if="showTabs">
+        <div class="col s12">
+          <ul class="tabs" tabs reload="allTabContentLoaded">
+            <div class="container">
+              <li class="tab col s3"><a class="active" href="#test1">Description</a></li>
+              <li class="tab col s3"><a href="#test2">Shipping</a></li>
+              <li class="tab col s3"><a href="#test3">Sizing</a></li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="container">
+          <div id="test1" class="col s12">
+            
+          <div class="col s12 m6 l6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris sit amet aliquet hendrerit. Vivamus id arcu mi. Donec molestie accumsan semper. Duis scelerisque nisl a mattis sodales. Ut sit amet egestas velit, vel aliquam erat. Suspendisse nec lacinia risus, nec euismod purus. Nulla vitae nibh dolor. Maecenas id tincidunt erat. Nulla malesuada, sem vel rhoncus aliquet, libero libero ullamcorper mi, vel placerat enim dui eget massa. Quisque ac tellus dignissim, volutpat enim vel, dignissim nulla. In hac habitasse platea dictumst. Sed laoreet iaculis eleifend. Nulla interdum sagittis tortor, tempor faucibus mauris ornare nec. Sed sodales posuere imperdiet.
+            </p>
+          </div>
+          <div class="col s12 m6 l6">
+            <p>
+              Cras commodo mollis lectus ut porta. Integer placerat luctus ante a ornare. Maecenas interdum vestibulum dolor, vitae condimentum arcu rutrum non. Sed hendrerit metus vitae tellus gravida luctus. Sed eget urna at metus dapibus dapibus vitae vel massa. Morbi mollis suscipit bibendum. Ut sed ante et arcu eleifend placerat sit amet quis enim. Proin neque diam, ultrices volutpat nisi vehicula, tristique suscipit lacus. Fusce malesuada imperdiet fermentum.
+            </p>
+          </div>
+
+          </div>
+          <div id="test2" class="col s12">
+            <div class="col s12 m6 l6">
+            <p>
+              Cras commodo mollis lectus ut porta. Integer placerat luctus ante a ornare. Maecenas interdum vestibulum dolor, vitae condimentum arcu rutrum non. Sed hendrerit metus vitae tellus gravida luctus. Sed eget urna at metus dapibus dapibus vitae vel massa. Morbi mollis suscipit bibendum. Ut sed ante et arcu eleifend placerat sit amet quis enim. Proin neque diam, ultrices volutpat nisi vehicula, tristique suscipit lacus. Fusce malesuada imperdiet fermentum.
+            </p>
+          </div>
+          <div class="col s12 m6 l6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris sit amet aliquet hendrerit. Vivamus id arcu mi. Donec molestie accumsan semper. Duis scelerisque nisl a mattis sodales. Ut sit amet egestas velit, vel aliquam erat. Suspendisse nec lacinia risus, nec euismod purus. Nulla vitae nibh dolor. Maecenas id tincidunt erat. Nulla malesuada, sem vel rhoncus aliquet, libero libero ullamcorper mi, vel placerat enim dui eget massa. Quisque ac tellus dignissim, volutpat enim vel, dignissim nulla. In hac habitasse platea dictumst. Sed laoreet iaculis eleifend. Nulla interdum sagittis tortor, tempor faucibus mauris ornare nec. Sed sodales posuere imperdiet.
+            </p>
+          </div>
+          </div>
+          <div id="test3" class="col s12">
+            <div class="col s12 m6 l6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor mauris sit amet aliquet hendrerit. Vivamus id arcu mi. Donec molestie accumsan semper. Duis scelerisque nisl a mattis sodales. Ut sit amet egestas velit, vel aliquam erat. Suspendisse nec lacinia risus, nec euismod purus. Nulla vitae nibh dolor. Maecenas id tincidunt erat. Nulla malesuada, sem vel rhoncus aliquet, libero libero ullamcorper mi, vel placerat enim dui eget massa. Quisque ac tellus dignissim, volutpat enim vel, dignissim nulla. In hac habitasse platea dictumst. Sed laoreet iaculis eleifend. Nulla interdum sagittis tortor, tempor faucibus mauris ornare nec. Sed sodales posuere imperdiet.
+            </p>
+          </div>
+          <div class="col s12 m6 l6">
+            <p>
+              Cras commodo mollis lectus ut porta. Integer placerat luctus ante a ornare. Maecenas interdum vestibulum dolor, vitae condimentum arcu rutrum non. Sed hendrerit metus vitae tellus gravida luctus. Sed eget urna at metus dapibus dapibus vitae vel massa. Morbi mollis suscipit bibendum. Ut sed ante et arcu eleifend placerat sit amet quis enim. Proin neque diam, ultrices volutpat nisi vehicula, tristique suscipit lacus. Fusce malesuada imperdiet fermentum.
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+
+</main>

@@ -1,0 +1,132 @@
+
+<main>
+<div class="slider" slider>
+    <ul class="slides">
+        <li>
+          <img class="images" src="assets/ulcd-64j1eq-leandro-puca.jpg"> 
+          <div class="caption left-align">
+            <h3>
+	                	RIGHT IS PINK.<br> 
+	                	LEFT IS BLUE
+	                </h3>
+	                <h5 class="light grey-text text-lighten-3">
+	                	Inspired by Brasil's bold colors <br>
+	                	and matching up to football's on-pitch <br>
+	                	playmakers, these kicks are ready to <br>
+	                	stand out.
+	                </h5>
+
+					<button class="waves-effect waves-light btn">SHOP BRASIL</button>
+          </div>
+        </li>
+        <li>
+          <img class="images" src="assets/52p1k0d0eum-austris-augusts.jpg">
+          <div class="caption left-align">
+            <h3>
+	                	RIGHT IS PINK.<br> 
+	                	LEFT IS BLUE
+	                </h3>
+	                <h5 class="light grey-text text-lighten-3">
+	                	Inspired by Brasil's bold colors <br>
+	                	and matching up to football's on-pitch <br>
+	                	playmakers, these kicks are ready to <br>
+	                	stand out.
+	                </h5>
+
+					<button class="waves-effect waves-light btn">SHOP BRASIL</button>
+          </div>
+        </li>
+      <li>
+          <img class="images" src="assets/epvix0oxl6e-nico-beard.jpg">
+          <div class="caption right-align">
+            <h3>
+	                	RIGHT IS PINK.<br> 
+	                	LEFT IS BLUE
+	                </h3>
+	                <h5 class="light grey-text text-lighten-3">
+	                	Inspired by Brasil's bold colors <br>
+	                	and matching up to football's on-pitch <br>
+	                	playmakers, these kicks are ready to <br>
+	                	stand out.
+	                </h5>
+
+					<button class="waves-effect waves-light btn">SHOP BRASIL</button>
+          </div>
+      </li>
+      <li>
+          <img class="images" src="assets/8lutnkzxzsa-geoff-scott.jpg"> 
+          <div class="caption center-align">
+            <h3>
+	                	RIGHT IS PINK.<br> 
+	                	LEFT IS BLUE
+	                </h3>
+	                <h5 class="light grey-text text-lighten-3">
+	                	Inspired by Brasil's bold colors <br>
+	                	and matching up to football's on-pitch <br>
+	                	playmakers, these kicks are ready to <br>
+	                	stand out.
+	                </h5>
+
+					<button class="waves-effect waves-light btn">SHOP BRASIL</button>
+          </div>
+      </li>
+    </ul>
+</div>
+
+
+<div class="container product-container">
+	
+	<div class="row">
+		<div class="col s12 m12 l12">
+			<div class="col s12 m6 l4">
+				<img class="images" src="assets/shoes.png">
+				<h4><a href="#">Football shoes</a></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit gravida fermentum.</p>
+			</div>
+			<div class="col s12 m6 l4">
+				<img class="images" src="assets/clothes.png">
+				<h4><a href="#">Modern clothes</a></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit gravida fermentum.</p>
+			</div>
+			<div class="col s12 m6 l4">
+				<img class="images" src="assets/bag.png">
+				<h4><a href="#">Bags & accessories</a></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit gravida fermentum.</p>
+			</div>
+		</div>
+	</div>
+	
+	<h3 class="popular-products">{{pageTitle}}</h3>
+
+	<div class="row">
+		
+		<div class="product" *ngFor="let product of products" [class.featured]="product.isFeatured">
+			
+			<div class="col s6 m3 l3 box">
+				<div class="content">
+					<div class="rates">
+						<i class="material-icons rate-product">star_border</i>
+						<i class="material-icons rate-product">star_border</i>
+						<i class="material-icons rate-product">star_border</i>
+						<i class="material-icons rate-product">star_border</i>
+						<i class="material-icons rate-product">star_border</i>
+					</div>
+					<img class="images" src="{{product.image}}" alt="{{product.name}}">
+					<div class="info-product">
+						<h5>{{product.name}}</h5>
+						<p>{{product.description}}</p>
+					</div>
+					<div class="price-product">
+						<p>{{product.cost | currency: 'USD':true:'1.1'}}</p>
+						<i class="material-icons add-product">add_circle_outline</i>
+						<i class="material-icons like-product">favorite_border</i>
+					</div>
+					<a [routerLink]="['/product', product.productid]" class="buy-product waves-effect waves-light btn">BUY NOW</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+</main>
